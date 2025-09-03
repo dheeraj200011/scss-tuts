@@ -9,10 +9,17 @@ $font-weights: (
   "bold": 800,
 );
 
+$font-color: (
+  "normal": white,
+  "warn": yellow,
+  "reject": red,
+);
+
 body {
   background: $primary-color;
 }
 
 .main p {
   font-weight: map-get($font-weights, regular);
+  color: map-get($font-color, warn);
 }
