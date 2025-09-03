@@ -1,0 +1,18 @@
+// Variables
+$primary-color: gray;
+$secondary-color: aqua;
+
+// Map of font weights
+$font-weights: (
+  "regular": 400,
+  "medium": 600,
+  "bold": 800,
+);
+
+body {
+  background: $primary-color;
+}
+
+.main p {
+  font-weight: map-get($font-weights, regular);
+}
